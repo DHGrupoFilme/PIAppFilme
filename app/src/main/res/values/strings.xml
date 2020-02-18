@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="o_que_voc_quer_jogar_hoje">O QUE VOCÊ QUER JOGAR HOJE ?</string>
+    <string name="quiz">QUIZ</string>
+    <string name="single_player">SINGLE PLAYER</string>
+    <string name="trunfo">TRUNFO</string>
+    <string name="multiplayer">MULTIPLAYER</string>
+    <string name="ganhou">GANHOU</string>
+    <string name="perdeu">PERDEU</string>
+    <string name="bilheteria">BILHETERIA</string>
+    <string name="or_amento">ORÇAMENTO</string>
+    <string name="critica">CRITICA</string>
+    <string name="popularidade">POPULARIDADE</string>
+    <string name="nome_do_filme">NOME DO FILME</string>
+    <string name="ano">ANO</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manter_logado">MANTER LOGADO</string>
+    <string name="login">LOGIN</string>
+    <string name="cadastre_se_aqui">CADASTRE-SE AQUI</string>
+    <string name="senha">Senha</string>
+    <string name="entrar_pelo_facebook">ENTRAR PELO FACEBOOK</string>
+    <string name="confirme_a_senha">Confirme a senha</string>
+    <string name="email">Email</string>
+    <string name="pronto">PRONTO</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="fantasia">Fantasia</string>
+    <string name="fic_o_cient_fica">Ficção Científica</string>
+    <string name="terror">Terror</string>
+    <string name="romance">Romance</string>
+    <string name="escolha_os_g_neros">ESCOLHA OS GÊNEROS:</string>
+    <string name="suspense">Suspense</string>
+    <string name="drama">Drama</string>
+    <string name="a_o">Ação</string>
+    <string name="_10_s">10\'s</string>
+    <string name="_60_s">60\'s</string>
+    <string name="_00">00</string>
+    <string name="_80_s">80\'s</string>
+    <string name="_50_s">50\'s</string>
+    <string name="escolha_as_d_cadas">ESCOLHA AS DÉCADAS:</string>
+    <string name="_70_s">70\'s</string>
+    <string name="_90_s">90\'s</string>
 </resources>

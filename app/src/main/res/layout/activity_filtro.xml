@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preto"
+    tools:context=".FiltroActivity">
+
+    <CheckBox
+        android:id="@+id/checkFantasia"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/fantasia"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkAcao"
+        app:layout_constraintEnd_toStartOf="@+id/check50"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkFiccao"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="116dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/fic_o_cient_fica"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/check10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkTerror"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/terror"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkRomance"
+        app:layout_constraintEnd_toStartOf="@+id/check70"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkRomance"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/romance"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkSuspense"
+        app:layout_constraintEnd_toStartOf="@+id/check80"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/escolha_os_g_neros"
+        android:textColor="@color/branco"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkFantasia"
+        app:layout_constraintEnd_toStartOf="@+id/textDecada"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/checkSuspense"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/suspense"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkDrama"
+        app:layout_constraintEnd_toStartOf="@+id/check90"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkDrama"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/drama"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkFiccao"
+        app:layout_constraintEnd_toStartOf="@+id/check00"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkAcao"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/a_o"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkTerror"
+        app:layout_constraintEnd_toStartOf="@+id/check60"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check10"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="116dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_10_s"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check60"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_60_s"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check70"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check00"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check10"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check80"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_80_s"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check90"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check50"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_50_s"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check60"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textDecada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/escolha_as_d_cadas"
+        android:textColor="@color/branco"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check50"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check70"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_70_s"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check80"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/check90"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/branco"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/_90_s"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/check00"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagemTrunflix"
+        android:layout_width="268dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/checkFantasia"
+        app:layout_constraintEnd_toStartOf="@+id/textDecada"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/botaoFiltro"
+        android:layout_width="124dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="52dp"
+        android:background="@color/vermelho"
+        android:text="PRONTO"
+        android:textColor="@color/branco"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
