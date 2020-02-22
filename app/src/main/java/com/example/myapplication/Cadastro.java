@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -43,6 +44,7 @@ public class Cadastro extends AppCompatActivity {
         if (!senha.isEmpty() && !confirmarSenha.isEmpty() && !email.isEmpty()) {
             if (senha.equals(confirmarSenha)) {
                 Toast.makeText(getApplicationContext(), "Cadastrado com sucesso", Toast.LENGTH_LONG).show();
+                startActivity(new Intent(getApplicationContext(), FiltroActivity.class));
             } else {
                 Toast.makeText(getApplicationContext(), "Senhas incompatives", Toast.LENGTH_LONG).show();
             }
