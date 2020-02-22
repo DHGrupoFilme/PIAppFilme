@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryDark"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <ImageView
         android:id="@+id/logoTrunflix"
@@ -116,8 +116,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/senha"
-            android:textColorHint="@color/branco"
-            android:textColor="@color/branco"/>
+            android:inputType="textPassword"
+            android:textColor="@color/branco"
+            android:textColorHint="@color/branco" />
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
@@ -137,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/branco"
-            android:hint="Email"
+            android:hint="@string/email"
             android:inputType="textPassword"
             android:textColorHint="@color/branco" />
     </android.support.design.widget.TextInputLayout>
