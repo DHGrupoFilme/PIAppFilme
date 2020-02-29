@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/QuizActivity"
+    android:background="@color/preto"
+    tools:context=".view.FavoritosActivity">
+
+    <ImageView
+        android:id="@+id/logoTrunflix"
+        android:layout_width="254dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <FrameLayout
+        android:id="@+id/layoutQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/vermelho"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/logoTrunflix"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/textFavoritos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Favoritos"
+            android:textColor="@color/branco"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

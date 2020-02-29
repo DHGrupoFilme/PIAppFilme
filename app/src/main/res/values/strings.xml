@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Trunflix</string>
     <string name="o_que_voc_quer_jogar_hoje">O QUE VOCÊ QUER JOGAR HOJE ?</string>
     <string name="quiz">QUIZ</string>
     <string name="single_player">SINGLE PLAYER</string>
@@ -45,4 +45,5 @@
     <string name="_70_s">70\'s</string>
     <string name="_90_s">90\'s</string>
     <string name="qual_dos_filmes_teve_a_maior_bilheteria">QUAL DOS FILMES TEVE A MAIOR BILHETERIA ?</string>
+    <string name="favoritos">Favoritos</string>
 </resources>

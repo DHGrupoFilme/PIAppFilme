@@ -1,5 +1,4 @@
 package com.example.myapplication.view;
-
 import android.content.Intent;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -8,9 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.myapplication.R;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,14 +29,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         botaoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 validar();
             }
         });
-
 
     }
 
@@ -64,6 +59,4 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Preencha os campos", Toast.LENGTH_LONG).show();
         }
     }
-
-
 }

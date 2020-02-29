@@ -24,27 +24,27 @@
         android:layout_width="124dp"
         android:layout_height="32dp"
         android:layout_marginStart="143dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="144dp"
-        android:layout_marginBottom="248dp"
         android:background="@color/colorPrimary"
         android:text="@string/pronto"
         android:textColor="@color/branco"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmarSenha" />
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/inputEmail"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="12dp"
         android:background="@color/cinza_input"
         android:textColorHint="@color/branco"
-        app:layout_constraintBottom_toTopOf="@+id/inputSenha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoTrunflix">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
@@ -59,20 +59,20 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="11dp"
         android:background="@color/cinza_input"
         android:textColorHint="@color/branco"
-        app:layout_constraintBottom_toTopOf="@+id/inputConfirmarSenha"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/branco"
-            android:inputType="textPassword"
             android:hint="@string/senha"
+            android:inputType="textPassword"
+            android:textColor="@color/branco"
             android:textColorHint="@color/branco" />
     </android.support.design.widget.TextInputLayout>
 
@@ -81,13 +81,13 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="46dp"
         android:background="@color/cinza_input"
         android:textColorHint="@color/branco"
-        app:layout_constraintBottom_toTopOf="@+id/botaoPronto"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputSenha">
 
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"

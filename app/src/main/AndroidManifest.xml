@@ -9,15 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.QuizActivity"></activity>
+        <activity android:name=".view.FavoritosActivity"></activity>
+        <activity android:name=".view.QuizActivity" />
         <activity android:name=".view.FiltroActivity" />
-        <activity
-            android:name=".Main2Activity"
-            android:label="@string/title_activity_main2" />
         <activity android:name=".view.TrunfoActivity" />
         <activity android:name=".view.SelecaoJogo" />
-        <activity android:name=".view.MainActivity" />
-        <activity android:name=".view.CadastroActivity" />
+        <activity
+            android:name=".view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".view.CadastroActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".view.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
