@@ -14,15 +14,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/vermelhoCarta"
             android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imagemCartaQuiz"
-                android:layout_width="290dp"
-                android:layout_height="225dp"
+                android:layout_width="200dp"
+                android:layout_height="220dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@color/vermelhoCarta"
-                android:src="@drawable/taxidriver"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/speed"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -36,7 +38,7 @@
                     android:layout_height="wrap_content"
                     android:textColor="@color/vermelho"
                     android:textSize="15sp"
-                    tools:text="Taxi Driver" />
+                    tools:text="@string/nome_filme_rc" />
 
                 <TextView
                     android:id="@+id/anoCartaQuiz"
@@ -45,9 +47,12 @@
                     android:layout_marginLeft="6dp"
                     android:paddingTop="5dp"
                     android:textColor="@color/vermelho"
-                    android:textSize="15dp"
-                    tools:text="2000" />
+                    android:textSize="15sp"
+                    tools:text="@string/ano_filme_rc" />
             </LinearLayout>
+
         </LinearLayout>
+
     </android.support.v7.widget.CardView>
+
 </LinearLayout>

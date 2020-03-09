@@ -1,5 +1,4 @@
 package com.example.myapplication.adapter;
-
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,10 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.example.myapplication.R;
 import com.example.myapplication.model.Carta;
-
 import java.util.List;
 
 public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHolder> {
@@ -19,7 +16,6 @@ public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHold
     public AdapterCartas(List<Carta> listaCartas){
         this.cartas = listaCartas;
     }
-
 
     @NonNull
     @Override

@@ -46,4 +46,10 @@
     <string name="_90_s">90\'s</string>
     <string name="qual_dos_filmes_teve_a_maior_bilheteria">QUAL DOS FILMES TEVE A MAIOR BILHETERIA ?</string>
     <string name="favoritos">Favoritos</string>
+    <string name="nome_filme_rc">Taxi Driver</string>
+    <string name="ano_filme_rc">2000</string>
+    <string name="txt_orcamento">100.000.000</string>
+    <string name="txt_bilheteria">700.000.000</string>
+    <string name="txt_critica">****</string>
+    <string name="txt_pop">78</string>
 </resources>

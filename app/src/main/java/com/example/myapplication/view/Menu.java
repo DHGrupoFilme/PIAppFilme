@@ -32,5 +32,4 @@ public abstract class Menu extends AppCompatActivity
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_start_end">10dp</dimen>
+    <dimen name="chk_margin_top">16dp</dimen>
+    <dimen name="chk_width">150dp</dimen>
+    <dimen name="ckc_top24">24dp</dimen>
+    <dimen name="chc_end111">111dp</dimen>
+</resources>

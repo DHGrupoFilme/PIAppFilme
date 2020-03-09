@@ -98,5 +98,4 @@
             android:textColorHint="@color/branco" />
     </android.support.design.widget.TextInputLayout>
 
-
 </android.support.constraint.ConstraintLayout>
