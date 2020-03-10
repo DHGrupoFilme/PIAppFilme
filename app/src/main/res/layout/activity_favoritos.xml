@@ -36,9 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
-            android:text="Favoritos"
-            android:textColor="@color/branco"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:text="@string/favoritos"
+            style="@style/tela_favoritos" />
     </FrameLayout>
 </android.support.constraint.ConstraintLayout>

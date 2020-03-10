@@ -30,4 +30,9 @@
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/branco</item>
     </style>
+    <style name="tela_favoritos">
+        <item name="android:textColor">@color/branco</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
