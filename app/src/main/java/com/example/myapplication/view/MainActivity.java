@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
                 abrirCadastro();
             }
         });
-
         botaoLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         String email = inputEmail.getEditText().getText().toString();
         String senha = inputSenha.getEditText().getText().toString();
         if(!email.isEmpty() && !senha.isEmpty()){
-            startActivity(new Intent(getApplicationContext(), FiltroActivity.class));
+            startActivity(new Intent(getApplicationContext(), InstrucoesActivity.class));
         } else {
             Toast.makeText(getApplicationContext(), "Preencha os campos", Toast.LENGTH_LONG).show();
         }

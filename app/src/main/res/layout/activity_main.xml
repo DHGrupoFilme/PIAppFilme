@@ -118,6 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/senha"
+            android:textSize="16dp"
             android:inputType="textPassword"
             android:textColor="@color/branco"
             android:textColorHint="@color/branco" />
@@ -142,6 +143,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/email"
+            android:textSize="16dp"
             android:textColor="@color/branco"
             android:textColorHint="@color/branco" />
     </android.support.design.widget.TextInputLayout>

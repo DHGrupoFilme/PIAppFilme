@@ -52,4 +52,6 @@
     <string name="txt_bilheteria">700.000.000</string>
     <string name="txt_critica">****</string>
     <string name="txt_pop">78</string>
+    <string name="pular">Pular</string>
+    <string name="instrucoes">Instruções</string>
 </resources>

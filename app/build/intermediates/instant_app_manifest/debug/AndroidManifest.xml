@@ -19,16 +19,27 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myapplication.view.FavoritosActivity" />
-        <activity android:name="com.example.myapplication.view.QuizActivity" />
-        <activity android:name="com.example.myapplication.view.FiltroActivity" />
-        <activity android:name="com.example.myapplication.view.TrunfoActivity" />
+        <activity
+            android:name="com.example.myapplication.view.FavoritosActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.QuizActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.FiltroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.TrunfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.myapplication.view.SelecaoJogo" />
         <activity
             android:name="com.example.myapplication.view.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.example.myapplication.view.CadastroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.InstrucoesActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.example.myapplication.view.SplashActivity" >
             <intent-filter>

@@ -6,80 +6,98 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml
+8-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml
+9-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:5:5-30:19
+11-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:5:5-40:19
 12        android:allowBackup="true"
-12-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:6:9-35
+12-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-13-->[com.android.support:support-compat:28.0.0] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+13-->[com.android.support:support-compat:28.0.0] C:\Users\ingsantos\.gradle\caches\transforms-2\files-2.1\b73d0db3c489aeab8b531c92b0313ef9\support-compat-28.0.0\AndroidManifest.xml:22:18-91
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:7:9-43
+15-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:8:9-41
+16-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:9:9-54
+17-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:10:9-35
+18-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:10:9-35
 19        android:testOnly="true"
 20        android:theme="@style/AppTheme" >
-20-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.myapplication.view.FavoritosActivity" />
-21-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:12:9-69
-21-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:12:19-57
-22        <activity android:name="com.example.myapplication.view.QuizActivity" />
-22-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:13:9-55
-22-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:13:19-52
-23        <activity android:name="com.example.myapplication.view.FiltroActivity" />
-23-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:14:9-57
-23-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:14:19-54
-24        <activity android:name="com.example.myapplication.view.TrunfoActivity" />
-24-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:15:9-57
-24-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:15:19-54
-25        <activity android:name="com.example.myapplication.view.SelecaoJogo" />
-25-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:16:9-54
-25-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:16:19-51
-26        <activity
-26-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:17:9-19:68
-27            android:name="com.example.myapplication.view.MainActivity"
-27-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:18:13-46
-28            android:theme="@style/AppTheme.NoActionBar" />
-28-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:19:13-56
-29        <activity
-29-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:20:9-22:68
-30            android:name="com.example.myapplication.view.CadastroActivity"
-30-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:21:13-50
-31            android:theme="@style/AppTheme.NoActionBar" />
-31-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:22:13-56
-32        <activity android:name="com.example.myapplication.view.SplashActivity" >
-32-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:23:9-29:20
-32-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:23:19-54
-33            <intent-filter>
-33-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:24:13-28:29
-34                <action android:name="android.intent.action.MAIN" />
-34-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:25:17-69
-34-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:25:25-66
-35
-36                <category android:name="android.intent.category.LAUNCHER" />
-36-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:27:17-77
-36-->C:\Users\Lenovo\Desktop\PIGrupoFilmes\PIAppFilme\app\src\main\AndroidManifest.xml:27:27-74
-37            </intent-filter>
-38        </activity>
-39
-40        <provider
-40-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
-41            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
-41-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
-42            android:authorities="com.example.myapplication.lifecycle-trojan"
-42-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
-43            android:exported="false"
-43-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
-44            android:multiprocess="true" />
-44-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\Lenovo\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
-45    </application>
+20-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:11:9-40
+21        <activity
+21-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:12:9-14:59
+22            android:name="com.example.myapplication.view.FavoritosActivity"
+22-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:13:13-51
+23            android:theme="@style/AppTheme.NoActionBar" />
+23-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:14:13-56
+24        <activity
+24-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:15:9-17:59
+25            android:name="com.example.myapplication.view.QuizActivity"
+25-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:16:13-46
+26            android:theme="@style/AppTheme.NoActionBar" />
+26-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:17:13-56
+27        <activity
+27-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:18:9-20:59
+28            android:name="com.example.myapplication.view.FiltroActivity"
+28-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:19:13-48
+29            android:theme="@style/AppTheme.NoActionBar" />
+29-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:20:13-56
+30        <activity
+30-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:21:9-23:59
+31            android:name="com.example.myapplication.view.TrunfoActivity"
+31-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:22:13-48
+32            android:theme="@style/AppTheme.NoActionBar" />
+32-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:23:13-56
+33        <activity android:name="com.example.myapplication.view.SelecaoJogo" />
+33-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:24:9-54
+33-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:24:19-51
+34        <activity
+34-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:25:9-27:59
+35            android:name="com.example.myapplication.view.MainActivity"
+35-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:26:13-46
+36            android:theme="@style/AppTheme.NoActionBar" />
+36-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:27:13-56
+37        <activity
+37-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:28:9-30:59
+38            android:name="com.example.myapplication.view.CadastroActivity"
+38-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:29:13-50
+39            android:theme="@style/AppTheme.NoActionBar" />
+39-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:30:13-56
+40        <activity
+40-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:31:9-32:58
+41            android:name="com.example.myapplication.view.InstrucoesActivity"
+41-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:31:19-58
+42            android:theme="@style/AppTheme.NoActionBar" />
+42-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:32:13-56
+43        <activity android:name="com.example.myapplication.view.SplashActivity" >
+43-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:33:9-39:20
+43-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:33:19-54
+44            <intent-filter>
+44-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:34:13-38:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:35:17-69
+45-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:35:25-66
 46
-47</manifest>
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:37:17-77
+47-->C:\Users\ingsantos\filmesProjetoIntegrador\PIAppFilme\app\src\main\AndroidManifest.xml:37:27-74
+48            </intent-filter>
+49        </activity>
+50
+51        <provider
+51-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ingsantos\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:23:9-27:43
+52            android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer"
+52-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ingsantos\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:24:13-83
+53            android:authorities="com.example.myapplication.lifecycle-trojan"
+53-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ingsantos\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:25:13-68
+54            android:exported="false"
+54-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ingsantos\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:26:13-37
+55            android:multiprocess="true" />
+55-->[android.arch.lifecycle:extensions:1.1.1] C:\Users\ingsantos\.gradle\caches\transforms-2\files-2.1\dd51f51a756baaff7a81d412e9a23414\extensions-1.1.1\AndroidManifest.xml:27:13-40
+56    </application>
+57
+58</manifest>
