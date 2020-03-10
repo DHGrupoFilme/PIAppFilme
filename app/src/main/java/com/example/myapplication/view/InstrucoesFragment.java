@@ -22,9 +22,7 @@ public class InstrucoesFragment extends Fragment {
     private MediaController mediaControlsTrunfo;
     private Button bntPular;
 
-    public InstrucoesFragment() {
-
-    }
+    public InstrucoesFragment() { }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
