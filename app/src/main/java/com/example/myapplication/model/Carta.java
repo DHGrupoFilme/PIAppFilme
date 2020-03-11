@@ -9,9 +9,7 @@ public class Carta {
     private String ano;
     private int imagem;
 
-    public Carta(){
-
-    }
+    public Carta(){ }
 
     public Carta(String nomeFilme, String ano, String popularidade, String critica, String orcamento, String bilheteria, int imagem) {
         this.nomeFilme = nomeFilme;

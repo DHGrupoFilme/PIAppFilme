@@ -31,7 +31,6 @@ public class TrunfoActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerCartas.setLayoutManager(layoutManager);
         recyclerCartas.setAdapter(adapter);
-
     }
 
     public void onBind() {

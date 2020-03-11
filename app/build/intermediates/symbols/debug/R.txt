@@ -2066,7 +2066,8 @@ int style Widget_MaterialComponents_Toolbar 0x7f1101f4
 int style Widget_Support_CoordinatorLayout 0x7f1101f5
 int style botao_pronto 0x7f1101f6
 int style check_box 0x7f1101f7
-int style text_genero_ano 0x7f1101f8
+int style tela_favoritos 0x7f1101f8
+int style text_genero_ano 0x7f1101f9
 int[] styleable ActionBar { 0x7f030033, 0x7f030034, 0x7f030035, 0x7f030099, 0x7f03009a, 0x7f03009b, 0x7f03009c, 0x7f03009d, 0x7f03009e, 0x7f0300ac, 0x7f0300b5, 0x7f0300b6, 0x7f0300c1, 0x7f0300ef, 0x7f0300f4, 0x7f0300f9, 0x7f0300fa, 0x7f0300fc, 0x7f030106, 0x7f030110, 0x7f030166, 0x7f030173, 0x7f030189, 0x7f03018d, 0x7f03018e, 0x7f0301bd, 0x7f0301c0, 0x7f030205, 0x7f03020f }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1

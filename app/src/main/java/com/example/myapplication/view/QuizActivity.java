@@ -11,7 +11,6 @@ import java.util.List;
 
 public class QuizActivity extends AppCompatActivity {
     private RecyclerView recyclerCartas;
-    private RecyclerView recyclerCartas2;
     private List<Carta> cartas = new ArrayList<>();
 
     @Override
@@ -19,7 +18,6 @@ public class QuizActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
         recyclerCarta1();
-
     }
 
     public void onBind(){
@@ -36,16 +34,6 @@ public class QuizActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerCartas.setLayoutManager(layoutManager);
         recyclerCartas.setAdapter(adapter);
-
     }
 
-//    protected void recyclerCarta2(){
-//        recyclerCartas2 = findViewById(R.id.quizCarta2);
-//        onBind();
-//        AdapterCartasQuiz adapter1 = new AdapterCartasQuiz(cartas);
-//        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-//        recyclerCartas.setLayoutManager(layoutManager);
-//        recyclerCartas.setAdapter(adapter1);
-//    }
-
-    }
+}
