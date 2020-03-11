@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Trunflix</string>
     <string name="o_que_voc_quer_jogar_hoje">O QUE VOCÊ QUER JOGAR HOJE ?</string>
     <string name="quiz">QUIZ</string>
     <string name="single_player">SINGLE PLAYER</string>
@@ -44,4 +44,14 @@
     <string name="escolha_as_d_cadas">ESCOLHA AS DÉCADAS:</string>
     <string name="_70_s">70\'s</string>
     <string name="_90_s">90\'s</string>
+    <string name="qual_dos_filmes_teve_a_maior_bilheteria">QUAL DOS FILMES TEVE A MAIOR BILHETERIA ?</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="nome_filme_rc">Taxi Driver</string>
+    <string name="ano_filme_rc">2000</string>
+    <string name="txt_orcamento">100.000.000</string>
+    <string name="txt_bilheteria">700.000.000</string>
+    <string name="txt_critica">****</string>
+    <string name="txt_pop">78</string>
+    <string name="pular">Pular</string>
+    <string name="instrucoes">Instruções</string>
 </resources>

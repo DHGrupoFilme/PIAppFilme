@@ -18,15 +18,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.myapplication.FiltroActivity" />
         <activity
-            android:name="com.example.myapplication.Main2Activity"
-            android:label="@string/title_activity_main2" />
-        <activity android:name="com.example.myapplication.Trunfo" />
-        <activity android:name="com.example.myapplication.SelecaoJogo" />
-        <activity android:name="com.example.myapplication.MainActivity" />
-        <activity android:name="com.example.myapplication.Cadastro" />
-        <activity android:name="com.example.myapplication.SplashActivity" >
+            android:name="com.example.myapplication.view.FavoritosActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.QuizActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.FiltroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.TrunfoActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.myapplication.view.SelecaoJogo" />
+        <activity
+            android:name="com.example.myapplication.view.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.CadastroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.myapplication.view.InstrucoesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.myapplication.view.SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
