@@ -30,7 +30,7 @@
 
         <TextView
             android:id="@+id/textGanhou"
-            android:layout_width="61dp"
+            android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/bree_serif"
@@ -79,8 +79,8 @@
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerCartas"
-            android:layout_width="332dp"
-            android:layout_height="515dp"
+            android:layout_width="340dp"
+            android:layout_height="560dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
