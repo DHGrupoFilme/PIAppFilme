@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preto"
+    android:orientation="vertical"
+    tools:context=".view.InstrucoesFragment">
+
+    <TextView
+        android:id="@+id/textSelecao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/vermelho"
+        android:fontFamily="@font/bree_serif"
+        android:padding="10dp"
+        android:text="@string/instrucoes"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/textQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/quiz"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSelecao"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewQuiz"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:backgroundTint="@color/vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textQuiz"
+        app:layout_constraintVertical_bias="0.033">
+
+        <VideoView
+            android:id="@+id/videoViewQuiz"
+            android:layout_width="320dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textTrunfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/trunfo"
+        android:textColor="@color/branco"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewQuiz"
+        app:layout_constraintVertical_bias="0.011" />
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardViewTrunfo"
+        android:layout_width="350dp"
+        android:layout_height="190dp"
+        android:backgroundTint="@color/vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTrunfo"
+        app:layout_constraintVertical_bias="0.07">
+
+        <VideoView
+            android:id="@+id/videoViewTrunfo"
+            android:layout_width="320dp"
+            android:layout_height="170dp"
+            android:layout_gravity="center" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonPular"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pular"
+        android:textAllCaps="true"
+        android:fontFamily="@font/bree_serif"
+        android:textAlignment="center"
+        android:textColor="@color/branco"
+        android:textSize="22sp"
+        android:backgroundTint="@color/vermelho"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewTrunfo" />
+</android.support.constraint.ConstraintLayout>
