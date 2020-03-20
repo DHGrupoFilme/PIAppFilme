@@ -27,14 +27,7 @@ public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         Carta carta = cartas.get(position);
-        holder.nomeDoFilme.setText( carta.getNomeFilme());
-        holder.anoFilme.setText( carta.getAno());
-        holder.bilheteria.setText( carta.getBilheteria());
-        holder.orcamento.setText( carta.getOrcamento());
-        holder.critica.setText( carta.getCritica());
-        holder.popularidade.setText( carta.getPopularidade());
-        holder.imagemCarta.setImageResource( carta.getImagem());
-
+        holder.bind(carta);
     }
 
     @Override
@@ -69,6 +62,16 @@ public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHold
             bilheteria = itemView.findViewById(R.id.bilheteria);
             imagemCarta = itemView.findViewById(R.id.imagemCarta);
 
+        }
+
+        public void bind(Carta carta) {
+            nomeDoFilme.setText(carta.getNomeFilme());
+            anoFilme.setText(carta.getAno());
+            bilheteria.setText(carta.getBilheteria());
+            orcamento.setText(carta.getOrcamento());
+            critica.setText(carta.getCritica());
+            popularidade.setText(carta.getPopularidade());
+            imagemCarta.setImageResource(carta.getImagem());
         }
     }
 }
