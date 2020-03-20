@@ -3,8 +3,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
-import android.widget.TextView;
 import com.example.myapplication.adapter.AdapterCartas;
 import com.example.myapplication.model.Carta;
 import com.example.myapplication.R;
@@ -12,12 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TrunfoActivity extends AppCompatActivity {
-    private TextView textGanhou;
-    private TextView textPerdeu;
-    private ImageView setaGanhou;
-    private ImageView setaPerdeu;
-    private TextView pontosGanhou;
-    private TextView pontosPerdeu;
     private RecyclerView recyclerCartas;
     private List<Carta> cartas = new ArrayList<>();
 
@@ -25,8 +17,9 @@ public class TrunfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trunfo);
-        recyclerCartas = findViewById(R.id.recyclerCartas);
         onBind();
+
+        initViews();
         AdapterCartas adapter = new AdapterCartas(cartas);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerCartas.setLayoutManager(layoutManager);
@@ -40,12 +33,7 @@ public class TrunfoActivity extends AppCompatActivity {
         cartas.add(c);
     }
 
-    public void initViews() {
-        textGanhou = findViewById(R.id.textGanhou);
-        textPerdeu = findViewById(R.id.textPerdeu);
-        setaGanhou = findViewById(R.id.setaGanhou);
-        setaPerdeu = findViewById(R.id.setaPerdeu);
-        pontosGanhou = findViewById(R.id.pontosGanhou);
-        pontosPerdeu = findViewById(R.id.pontosPerdeu);
+    public void initViews(){
+        recyclerCartas = findViewById(R.id.recyclerCartas);
     }
 }
