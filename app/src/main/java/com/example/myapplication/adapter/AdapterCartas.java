@@ -6,33 +6,44 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.example.myapplication.R;
-import com.example.myapplication.model.Carta;
 import java.util.List;
+import com.example.myapplication.R;
+import com.example.myapplication.model.FilmeDetalhes;
+import com.squareup.picasso.Picasso;
+import static com.example.myapplication.util.Constantes.UrlImagemFilme.URL_IMAGEM;
 
 public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHolder> {
-    private List<Carta> cartas;
-
-    public AdapterCartas(List<Carta> listaCartas){
-        this.cartas = listaCartas;
+    private List<FilmeDetalhes> filmeList;
+    public AdapterCartas(List<FilmeDetalhes> filmesList){
+        this.filmeList = filmesList;
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
-        View cartaLista = LayoutInflater.from(parent.getContext()).inflate(R.layout.carta, parent, false);
-        return new MyViewHolder(cartaLista);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.carta, parent, false);
+        return new MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Carta carta = cartas.get(position);
-        holder.bind(carta);
+        final FilmeDetalhes filme = filmeList.get(position);
+         holder.onBind(filme);
     }
 
     @Override
     public int getItemCount() {
-        return 1;
+        return filmeList.size();
+    }
+
+    public void setUpdate(FilmeDetalhes novaLista){
+        if (this.filmeList.isEmpty()){
+            this.filmeList.add(novaLista);
+        }else{
+            this.filmeList.clear();
+            this.filmeList.add(novaLista);
+        }
+        notifyDataSetChanged();
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
@@ -61,17 +72,16 @@ public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHold
             textBilheteria = itemView.findViewById(R.id.text_bilheteria);
             bilheteria = itemView.findViewById(R.id.bilheteria);
             imagemCarta = itemView.findViewById(R.id.imagemCarta);
-
         }
 
-        public void bind(Carta carta) {
-            nomeDoFilme.setText(carta.getNomeFilme());
-            anoFilme.setText(carta.getAno());
-            bilheteria.setText(carta.getBilheteria());
-            orcamento.setText(carta.getOrcamento());
-            critica.setText(carta.getCritica());
-            popularidade.setText(carta.getPopularidade());
-            imagemCarta.setImageResource(carta.getImagem());
+        public void onBind(FilmeDetalhes filme) {
+            nomeDoFilme.setText(filme.getTitle());
+            anoFilme.setText(filme.getReleaseDate().substring(0,4));
+            bilheteria.setText(filme.getRevenue().toString() );
+            orcamento.setText(filme.getBudget().toString());
+            critica.setText(filme.getVoteAverage().toString());
+            popularidade.setText(filme.getPopularity().toString());
+            Picasso.get().load(URL_IMAGEM+ filme.getPosterPath()).into(imagemCarta);
         }
     }
 }
