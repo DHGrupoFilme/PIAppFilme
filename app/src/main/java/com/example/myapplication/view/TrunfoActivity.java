@@ -39,6 +39,5 @@ public class TrunfoActivity extends AppCompatActivity {
         recyclerCartas = findViewById(R.id.recyclerCartas);
         filmeViewModel = ViewModelProviders.of(this).get(FilmeViewModel.class);
         adapter = new AdapterCartas(filmes);
-
     }
 }
