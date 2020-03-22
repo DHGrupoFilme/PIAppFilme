@@ -9,12 +9,10 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import static com.example.myapplication.util.Constantes.Url.URL_BASE;
 
 public class RetrofitService {
-
     private static Retrofit retrofit;
     private static Retrofit getRetrofit() {
 
         if (retrofit == null) {
-
             OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
             httpClient.readTimeout(30, TimeUnit.SECONDS);
             httpClient.connectTimeout(30, TimeUnit.SECONDS);
