@@ -18,5 +18,4 @@ public class Genero {
     public void setName(String name) {
         this.name = name;
     }
-
 }
