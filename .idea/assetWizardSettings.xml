@@ -157,7 +157,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/image/ic_brightness_1_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_favorite_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -167,9 +167,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="898989" />
-                            <entry key="opacityPercent" value="80" />
-                            <entry key="outputName" value="back_ganhou_perdeu" />
+                            <entry key="color" value="bf0003" />
+                            <entry key="opacityPercent" value="75" />
+                            <entry key="outputName" value="ic_fav" />
                             <entry key="sourceFile" value="C:\Users\leoac" />
                           </map>
                         </option>

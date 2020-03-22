@@ -1,12 +1,35 @@
 package com.example.myapplication.model;
 
+import android.arch.persistence.room.ColumnInfo;
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
+@Entity(tableName = "cartas")
 public class Carta {
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "idCarta")
+    private int id;
+
+    @ColumnInfo(name = "popularidade")
     private String popularidade;
+
+    @ColumnInfo(name = "critica")
     private String critica;
+
+    @ColumnInfo(name = "orcamento")
     private String orcamento;
+
+    @ColumnInfo(name = "bilheteria")
     private String bilheteria;
+
+    @ColumnInfo(name = "nomeFilme")
     private String nomeFilme;
+
+    @ColumnInfo(name = "ano")
     private String ano;
+
+    @ColumnInfo(name = "imagem")
     private int imagem;
 
     public Carta(){ }
@@ -75,5 +98,13 @@ public class Carta {
 
     public void setImagem(int imagem) {
         this.imagem = imagem;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

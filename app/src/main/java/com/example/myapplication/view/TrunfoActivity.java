@@ -1,13 +1,22 @@
 package com.example.myapplication.view;
+import android.arch.lifecycle.ViewModelProvider;
+import android.arch.lifecycle.ViewModelProviders;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.myapplication.adapter.AdapterCartas;
 import com.example.myapplication.model.Carta;
 import com.example.myapplication.R;
+import com.example.myapplication.viewmodel.CartaViewModel;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -20,17 +29,17 @@ public class TrunfoActivity extends AppCompatActivity {
     private TextView pontosPerdeu;
     private RecyclerView recyclerCartas;
     private List<Carta> cartas = new ArrayList<>();
+    private ImageButton botaoFavoritos;
+    private CartaViewModel viewModel;
+    private AdapterCartas adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trunfo);
-        recyclerCartas = findViewById(R.id.recyclerCartas);
+        initViews();
+        viewModel.getTodasCartas(this);
         onBind();
-        AdapterCartas adapter = new AdapterCartas(cartas);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        recyclerCartas.setLayoutManager(layoutManager);
-        recyclerCartas.setAdapter(adapter);
     }
 
     public void onBind() {
@@ -47,5 +56,23 @@ public class TrunfoActivity extends AppCompatActivity {
         setaPerdeu = findViewById(R.id.setaPerdeu);
         pontosGanhou = findViewById(R.id.pontosGanhou);
         pontosPerdeu = findViewById(R.id.pontosPerdeu);
+        botaoFavoritos = findViewById(R.id.botaoFavorito);
+
+        recyclerCartas = findViewById(R.id.recyclerCartas);
+        adapter = new AdapterCartas(cartas);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        recyclerCartas.setLayoutManager(layoutManager);
+        recyclerCartas.setAdapter(adapter);
+        viewModel = ViewModelProviders.of(this).get(CartaViewModel.class);
+    }
+
+    public void clickFavorito(View view){
+        insereCarta();
+        Toast.makeText(this, "Adicionado aos favoritos", Toast.LENGTH_SHORT).show();
+    }
+
+    public void insereCarta(){
+        Carta carta = (adapter.getCartaFavoritos());
+        viewModel.insereCarta(carta, this);
     }
 }
