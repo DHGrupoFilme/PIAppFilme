@@ -1,0 +1,76 @@
+{
+  "Quiz": [
+    {
+      "pergunta": "Em qual filme de Bond ele aparece em Madagascar, Montenegro, Praga, Miami, Bahamas e Veneza?",
+      "correta": "007 Cassino Royale",
+      "respostas": [
+        {
+          "a": "Dr No",
+          "b": "Goldfinger",
+          "c": "Thunderball",
+          "d": "You Only Live Twice"
+        }
+      ]
+    },
+    {
+      "pergunta": "Stan Lee(criador de personagens importantes da Marvel) aparece em todos os filmes da Marvel, quando ele apareceu nos Vingadores?",
+      "correta": "No final, ele aparece em um telejornal.",
+      "respostas": [
+        {
+          "a": "No quartel de Loki, ele é um de seus ajudantes.",
+          "b": "No final, ele aparece em um telejornal.",
+          "c": "Ele é um policial que está na luta.",
+          "d": "Quando Loki ataca o museu, ele se levanta e diz que não irá obedecer a Loki."
+        }
+      ]
+    },
+    {
+      "pergunta": "No filme Jack Sparrow revela que foi morto por um dos seus tripulante. Quem era esse tripulante?",
+      "correta": "Elizabeth Swan",
+      "respostas": [
+        {
+          "a": "Wiil Tunner",
+          "b": "Capitão Barbossa",
+          "c": "Tia Dalma",
+          "d": "Elizabeth Swan"
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual é a maior família mafiosa de Gotham?",
+      "correta": "Falcone",
+      "respostas": [
+        {
+          "a": "Falcone",
+          "b": "Deep",
+          "c": "Boat",
+          "d": "Crisp"
+        }
+      ]
+    },
+    {
+      "pergunta": "Em que ano o Titanic afundou?",
+      "correta": "1912",
+      "respostas": [
+        {
+          "a": "2001",
+          "b": "1912",
+          "c": "1989",
+          "d": "1913"
+        }
+      ]
+    },
+    {
+      "pergunta": "Qual o nome do melhor amigo de Luke Skywalker?",
+      "correta": "Hansolo",
+      "respostas": [
+        {
+          "a": "Hansolo",
+          "b": "Chewbaca",
+          "c": "Leia",
+          "d": "Ioda"
+        }
+      ]
+    }
+  ]
+}
