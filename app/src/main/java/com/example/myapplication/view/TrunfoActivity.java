@@ -11,12 +11,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.myapplication.adapter.AdapterCartas;
 import com.example.myapplication.model.Carta;
 import com.example.myapplication.R;
 import com.example.myapplication.viewmodel.CartaViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,7 +55,6 @@ public class TrunfoActivity extends AppCompatActivity {
         pontosGanhou = findViewById(R.id.pontosGanhou);
         pontosPerdeu = findViewById(R.id.pontosPerdeu);
         botaoFavoritos = findViewById(R.id.botaoFavorito);
-
         recyclerCartas = findViewById(R.id.recyclerCartas);
         adapter = new AdapterCartas(cartas);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);

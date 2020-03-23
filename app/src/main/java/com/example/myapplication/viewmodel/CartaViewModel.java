@@ -19,7 +19,6 @@ public class CartaViewModel extends ViewModel {
     private MutableLiveData<String> erroMutable = new MutableLiveData<>();
     public LiveData<String> erro = erroMutable;
 
-
     public void getTodasCartas(Context context){
         disposable.add(
                 repository.getAllCartas(context)

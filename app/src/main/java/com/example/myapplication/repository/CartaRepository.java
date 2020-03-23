@@ -1,12 +1,8 @@
 package com.example.myapplication.repository;
-
 import android.content.Context;
-
 import com.example.myapplication.model.Carta;
 import com.example.myapplication.repository.data.CartaDataBase;
-
 import java.util.List;
-
 import io.reactivex.Flowable;
 
 public class CartaRepository {

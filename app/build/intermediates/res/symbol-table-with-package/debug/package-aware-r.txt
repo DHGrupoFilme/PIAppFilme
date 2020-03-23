@@ -1040,6 +1040,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable facee
+drawable ic_fav
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1114,6 +1115,7 @@ id bilheteria
 id blocking
 id botaoCadastro
 id botaoFacebook
+id botaoFavorito
 id botaoFiltro
 id botaoLogin
 id botaoPronto
@@ -1252,6 +1254,7 @@ id progress_horizontal
 id quizCarta1
 id radio
 id recyclerCartas
+id recyclerFavoritos
 id right
 id right_icon
 id right_side

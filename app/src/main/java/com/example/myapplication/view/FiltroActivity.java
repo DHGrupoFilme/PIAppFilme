@@ -21,7 +21,7 @@ import java.util.List;
 import static android.os.Build.VERSION_CODES.P;
 
 public class FiltroActivity extends AppCompatActivity implements Serializable {
-    private List<String> listaCheck =  new ArrayList<>();
+    private List<String> listaCheck;
     private CheckBox check50;
     private CheckBox check60;
     private CheckBox check70;
@@ -43,7 +43,6 @@ public class FiltroActivity extends AppCompatActivity implements Serializable {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_filtro);
         initViews();
-       botaoFiltro = findViewById(R.id.botaoFiltro);
                botaoFiltro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,9 +69,11 @@ public class FiltroActivity extends AppCompatActivity implements Serializable {
         checkRomance = findViewById(R.id.checkRomance);
         checkDrama = findViewById(R.id.checkDrama);
         checkFiccao = findViewById(R.id.checkFiccao);
+        botaoFiltro = findViewById(R.id.botaoFiltro);
     }
 
-    public void testCheckBox(){
+    public List<String> testCheckBox(){
+        listaCheck = new ArrayList<>();
         if (check00.isChecked())
             listaCheck.add("00");
         if (check10.isChecked())
@@ -101,6 +102,7 @@ public class FiltroActivity extends AppCompatActivity implements Serializable {
             listaCheck.add("drama");
         if (checkFiccao.isChecked())
             listaCheck.add("ficcao");
+        return listaCheck;
         }
 
 }

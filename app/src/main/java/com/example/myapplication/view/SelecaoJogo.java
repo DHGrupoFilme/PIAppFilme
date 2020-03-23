@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import com.example.myapplication.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
