@@ -12,7 +12,6 @@ import java.util.List;
 
 public class AdapterCartasQuiz extends RecyclerView.Adapter<AdapterCartasQuiz.MyViewHolder> {
     private List<Carta> cartas;
-
     public AdapterCartasQuiz(List<Carta> listaCartas){
         this.cartas = listaCartas;
     }
