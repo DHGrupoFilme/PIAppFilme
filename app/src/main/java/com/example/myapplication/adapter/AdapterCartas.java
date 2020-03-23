@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 import com.example.myapplication.R;
+import com.example.myapplication.model.Carta;
 import com.example.myapplication.model.FilmeDetalhes;
 import com.squareup.picasso.Picasso;
 import static com.example.myapplication.util.Constantes.UrlImagemFilme.URL_IMAGEM;
@@ -28,7 +29,7 @@ public class AdapterCartas extends RecyclerView.Adapter<AdapterCartas.MyViewHold
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         final FilmeDetalhes filme = filmeList.get(position);
-         holder.onBind(filme);
+        holder.onBind(filme);
     }
 
     @Override
