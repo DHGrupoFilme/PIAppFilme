@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Sprint1.iml" filepath="$PROJECT_DIR$/Sprint1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PIAppFilme.iml" filepath="$PROJECT_DIR$/PIAppFilme.iml" group="PIAppFilme" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="PIAppFilme/app" />
     </modules>
   </component>
 </project>

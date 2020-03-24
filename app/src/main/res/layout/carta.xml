@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutCartaTrunfo"
+    android:layout_width="340dp"
+    android:layout_height="560dp"
+    android:background="@color/vermelhoCarta"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textNomeFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/nome_do_filme"
+        android:textColor="@color/branco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagemCarta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/bree_serif"
+        android:text="@string/ano"
+        android:textColor="@color/branco"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/imagemCarta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagemCarta"
+        android:layout_width="293dp"
+        android:layout_height="291dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNomeFilme"
+        app:srcCompat="@drawable/tombraider" />
+
+    <LinearLayout
+        android:id="@+id/layoutPopularidade"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/branco"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCarta">
+
+        <TextView
+            android:id="@+id/textPopularidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="@string/popularidade"
+            android:textColor="@color/preto"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/popularidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:textColor="@color/vermelho"
+            android:textSize="18sp"
+            tools:text="@string/txt_pop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCritica"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/branco"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPopularidade">
+
+        <TextView
+            android:id="@+id/textCritica"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="@string/critica"
+            android:textColor="@color/preto"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/critica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:textColor="@color/vermelho"
+            android:textSize="18sp"
+            tools:text="@string/txt_critica" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutLancamento"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/branco"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutCritica">
+
+        <TextView
+            android:id="@+id/textOrcamento"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="@string/or_amento"
+            android:textColor="@color/preto"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/orcamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:textColor="@color/vermelho"
+            android:textSize="18sp"
+            tools:text="@string/txt_orcamento" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBilheteria"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/branco"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutLancamento">
+
+        <TextView
+            android:id="@+id/text_bilheteria"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="@string/bilheteria"
+            android:textColor="@color/preto"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/bilheteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/bree_serif"
+            android:textColor="@color/vermelho"
+            android:textSize="18sp"
+            tools:text="@string/txt_bilheteria" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

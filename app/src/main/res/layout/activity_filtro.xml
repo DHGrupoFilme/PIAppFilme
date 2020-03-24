@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preto"
+    tools:context=".view.FiltroActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkFantasia"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/ckc_top24"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/fantasia"
+            app:layout_constraintEnd_toStartOf="@+id/check50"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <CheckBox
+            android:id="@+id/checkFiccao"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/fic_o_cient_fica"
+            app:layout_constraintEnd_toStartOf="@+id/check10"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkDrama" />
+
+        <CheckBox
+            android:id="@+id/checkTerror"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/terror"
+            app:layout_constraintEnd_toStartOf="@+id/check70"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkAcao" />
+
+        <CheckBox
+            android:id="@+id/checkRomance"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/romance"
+            app:layout_constraintEnd_toStartOf="@+id/check80"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkTerror" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/text_genero_ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginEnd="102dp"
+            android:text="@string/escolha_os_g_neros"
+            app:layout_constraintEnd_toStartOf="@+id/textDecada"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagemTrunflix" />
+
+        <CheckBox
+            android:id="@+id/checkSuspense"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/suspense"
+            app:layout_constraintEnd_toStartOf="@+id/check90"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkRomance" />
+
+        <CheckBox
+            android:id="@+id/checkDrama"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/drama"
+            app:layout_constraintEnd_toStartOf="@+id/check00"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkSuspense" />
+
+        <CheckBox
+            android:id="@+id/checkAcao"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_end"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/chc_end111"
+            android:text="@string/a_o"
+            app:layout_constraintEnd_toStartOf="@+id/check60"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkFantasia" />
+
+        <CheckBox
+            android:id="@+id/check10"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/_10_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check00" />
+
+        <CheckBox
+            android:id="@+id/check60"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/_60_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check50" />
+
+        <CheckBox
+            android:id="@+id/check00"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/_00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check90" />
+
+        <CheckBox
+            android:id="@+id/check80"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/_80_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check70" />
+
+        <CheckBox
+            android:id="@+id/check50"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ckc_top24"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:layout_marginBottom="24dp"
+            android:text="@string/_50_s"
+            app:layout_constraintBottom_toTopOf="@+id/check60"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textDecada" />
+
+        <TextView
+            android:id="@+id/textDecada"
+            style="@style/text_genero_ano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/escolha_as_d_cadas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagemTrunflix" />
+
+        <CheckBox
+            android:id="@+id/check70"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/_70_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check60" />
+
+        <CheckBox
+            android:id="@+id/check90"
+            style="@style/check_box"
+            android:layout_width="@dimen/chk_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:text="@string/_90_s"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/check80" />
+
+        <ImageView
+            android:id="@+id/imagemTrunflix"
+            android:layout_width="241dp"
+            android:layout_height="145dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="@dimen/chk_margin_top"
+            android:layout_marginEnd="@dimen/margin_start_end"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toStartOf="@+id/textDecada"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/botaoFiltro"
+            style="@style/botao_pronto"
+            android:text="PRONTO"
+            android:textColor="@color/branco"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkFiccao" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

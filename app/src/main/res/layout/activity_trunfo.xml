@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/preto"
+    tools:context=".view.TrunfoActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="133dp">
+
+        <TextView
+            android:id="@+id/pontosPerdeu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/back_ganhou_perdeu"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:text="1"
+            android:textColor="@color/branco"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toStartOf="@+id/setaPerdeu"
+            app:layout_constraintTop_toBottomOf="@+id/textPerdeu" />
+
+        <TextView
+            android:id="@+id/textGanhou"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="@string/ganhou"
+            android:textColor="@color/branco"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@+id/setaGanhou"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPerdeu"
+            android:layout_width="61dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/bree_serif"
+            android:text="@string/perdeu"
+            android:textColor="@color/branco"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/setaPerdeu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/setaPerdeu"
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/seta_trunfo_foreground"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/setaGanhou"
+            android:layout_width="44dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/seta_trunfo_foreground"
+            tools:ignore="VectorDrawableCompat" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerCartas"
+            android:layout_width="340dp"
+            android:layout_height="560dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pontosPerdeu" />
+
+        <TextView
+            android:id="@+id/pontosGanhou"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back_ganhou_perdeu"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:text="2"
+            android:textColor="@color/branco"
+            android:textSize="40sp"
+            app:layout_constraintStart_toEndOf="@+id/setaGanhou"
+            app:layout_constraintTop_toBottomOf="@+id/textGanhou" />
+
+        <ImageButton
+            android:id="@+id/botaoFavorito"
+            android:layout_width="51dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/preto"
+            android:onClick="clickFavorito"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toStartOf="@+id/pontosPerdeu"
+            app:layout_constraintStart_toEndOf="@+id/pontosGanhou"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_favorite_black_24dp" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
