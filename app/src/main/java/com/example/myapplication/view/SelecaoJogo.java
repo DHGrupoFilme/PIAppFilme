@@ -1,8 +1,10 @@
 package com.example.myapplication.view;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
 import com.example.myapplication.R;
 public class SelecaoJogo extends Menu {
     private ImageView imagemTrunfo;

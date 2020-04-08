@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layoutCartaTrunfo"
     android:layout_width="340dp"
-    android:layout_height="560dp"
+    android:layout_height="510dp"
     android:background="@color/vermelhoCarta"
     android:orientation="vertical">
 
@@ -12,14 +12,14 @@
         android:id="@+id/textNomeFilme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
         android:fontFamily="@font/bree_serif"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:text="@string/nome_do_filme"
         android:textColor="@color/branco"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/imagemCarta"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,23 +34,24 @@
         android:text="@string/ano"
         android:textColor="@color/branco"
         android:textSize="18sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/imagemCarta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imagemCarta"
-        android:layout_width="293dp"
-        android:layout_height="291dp"
+        android:layout_width="313dp"
+        android:layout_height="288dp"
         android:layout_gravity="center"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="72dp"
         android:layout_marginEnd="8dp"
-        android:scaleType="fitCenter"
+        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textNomeFilme"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tombraider" />
 
     <LinearLayout
@@ -58,11 +59,12 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:background="@color/branco"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imagemCarta">
 
@@ -94,11 +96,12 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:background="@color/branco"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layoutPopularidade">
 
@@ -130,7 +133,7 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:background="@color/branco"
         android:orientation="horizontal"
@@ -161,40 +164,4 @@
             tools:text="@string/txt_orcamento" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layoutBilheteria"
-        android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:background="@color/branco"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutLancamento">
-
-        <TextView
-            android:id="@+id/text_bilheteria"
-            android:layout_width="130dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/bree_serif"
-            android:text="@string/bilheteria"
-            android:textColor="@color/preto"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/bilheteria"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/bree_serif"
-            android:textColor="@color/vermelho"
-            android:textSize="18sp"
-            tools:text="@string/txt_bilheteria" />
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

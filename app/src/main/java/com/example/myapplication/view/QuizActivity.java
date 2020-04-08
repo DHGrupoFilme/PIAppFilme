@@ -3,7 +3,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import com.example.myapplication.adapter.AdapterCartasQuiz;
+import com.example.myapplication.view.adapter.AdapterCartasQuiz;
 import com.example.myapplication.model.Carta;
 import com.example.myapplication.R;
 import java.util.ArrayList;

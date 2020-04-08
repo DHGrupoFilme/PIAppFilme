@@ -1,51 +1,49 @@
 package com.example.myapplication.view;
-import android.support.v7.app.AppCompatActivity;
+
+import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.ImageView;
-import android.widget.TextView;
-import com.example.myapplication.adapter.AdapterCartas;
-import com.example.myapplication.model.Carta;
+import android.widget.ImageButton;
+
 import com.example.myapplication.R;
+import com.example.myapplication.view.adapter.AdapterCartas;
+import com.example.myapplication.model.Result;
+import com.example.myapplication.viewmodel.FilmeViewModel;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
+import static com.example.myapplication.util.Constantes.Hash.API_KEY;
+import static com.example.myapplication.util.Constantes.Language.PT_BR;
 
 public class TrunfoActivity extends AppCompatActivity {
-    private TextView textGanhou;
-    private TextView textPerdeu;
-    private ImageView setaGanhou;
-    private ImageView setaPerdeu;
-    private TextView pontosGanhou;
-    private TextView pontosPerdeu;
     private RecyclerView recyclerCartas;
-    private List<Carta> cartas = new ArrayList<>();
+    private List<Result> filmes = new ArrayList<>();
+    private FilmeViewModel filmeViewModel;
+    private AdapterCartas adapter;
+    private ImageButton botaoFavoritos;
+    private String[] sort = {"popularity.desc", "revenue.desc", "vote_count.desc"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trunfo);
+        initViews();
+        filmeViewModel.getFilmes(API_KEY, PT_BR, sort[new Random().nextInt(2)], 28, 1 + new Random().nextInt(29));
+        filmeViewModel.liveData.observe(this, (List<Result> results) -> adapter.atualizaLista(results));
+
+    }
+
+    public void initViews(){
         recyclerCartas = findViewById(R.id.recyclerCartas);
-        onBind();
-        AdapterCartas adapter = new AdapterCartas(cartas);
+        botaoFavoritos = findViewById(R.id.botaoFavorito);
+        filmeViewModel = ViewModelProviders.of(this).get(FilmeViewModel.class);
+        adapter = new AdapterCartas(filmes);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerCartas.setLayoutManager(layoutManager);
         recyclerCartas.setAdapter(adapter);
-    }
-
-    public void onBind() {
-        Carta c = new Carta("Joker", "2019", "90", "*****", "62.000.000", "1.200.000.000", R.drawable.joker);
-        cartas.add(c);
-        c = new Carta("It", "2017", "80", "****", "50.000.000", "900.000.000", R.drawable.it);
-        cartas.add(c);
-    }
-
-    public void initViews() {
-        textGanhou = findViewById(R.id.textGanhou);
-        textPerdeu = findViewById(R.id.textPerdeu);
-        setaGanhou = findViewById(R.id.setaGanhou);
-        setaPerdeu = findViewById(R.id.setaPerdeu);
-        pontosGanhou = findViewById(R.id.pontosGanhou);
-        pontosPerdeu = findViewById(R.id.pontosPerdeu);
     }
 }

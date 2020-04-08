@@ -43,7 +43,7 @@ public class CadastroActivity extends AppCompatActivity {
         if (!senha.isEmpty() && !confirmarSenha.isEmpty() && !email.isEmpty()) {
             if (senha.equals(confirmarSenha)) {
                 Toast.makeText(getApplicationContext(), "Cadastrado com sucesso", Toast.LENGTH_LONG).show();
-                startActivity(new Intent(getApplicationContext(), InstrucoesActivity.class));
+                startActivity(new Intent(getApplicationContext(), FiltroActivity.class));
             } else {
                 Toast.makeText(getApplicationContext(), "Senhas incompatives", Toast.LENGTH_LONG).show();
             }
